@@ -19,9 +19,19 @@
                 <td>
                     <%= c.year %>
                 </td>
+                <td>
+                    <a class="btn-detail"
+                    href="/cars/manufacturers/<%=c._id%>">DETAILS</a>
+                </td>
             </tr>
         <% }) %>
     </tbody>
 </table>
-<button>ADD MANUFACTURER</button>
+<section>
+    <form method="POST" action="/cars/manufacturers">
+        <label>Manufacturer Name: </label>
+        <input type="submit" value="Add manufacturer"><br/>
+        <button>ADD MANUFACTURER</button>
+    </form>    
+</section>
 <%- include('../partials/footer') %>

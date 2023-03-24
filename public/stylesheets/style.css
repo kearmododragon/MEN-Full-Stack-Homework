@@ -50,3 +50,14 @@ button{
   color:#ffffff;
   box-shadow: 5px 10px #6e6a6a;
 }
+.button-detail{
+  font-size: 14px;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.button-detail:hover{
+  background-color: #374755;
+}
