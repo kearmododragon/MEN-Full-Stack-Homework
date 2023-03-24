@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('git-flow-walkthrough:server');
+var debug = require('debug')('men-full-stack-homework:server');
 var http = require('http');
 
 /**
