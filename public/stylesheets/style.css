@@ -43,3 +43,10 @@ a {
   color: silver;
     background-color: rgba(0, 0, 0, 0.8);
 }
+button{
+  border:none;
+  border-radius: 0.5px;
+  background-color: #000000;
+  color:#ffffff;
+  box-shadow: 5px 10px #6e6a6a;
+}

@@ -1,0 +1,27 @@
+<%- include('../partials/header', { title }) %>
+<table>
+    <thead>
+        <tr class="headings">
+            <th>Manufacturer: </th>
+            <th>Country: </th>
+            <th>Created: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% cars.forEach(c => { %>
+            <tr>
+                <td>
+                    <%= c.manufacturer %>
+                </td>
+                <td>
+                    <%= c.country %>
+                </td>
+                <td>
+                    <%= c.year %>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+<button>ADD MANUFACTURER</button>
+<%- include('../partials/footer') %>
