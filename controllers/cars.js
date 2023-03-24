@@ -1,7 +1,8 @@
 const Car = require('../models/car')
 
 module.exports = {
-    index
+    index,
+    new: newCar
 }
 
 function index(req, res){
@@ -14,4 +15,9 @@ function index(req, res){
     //     console.log(err)
     //     res.redirect('/')
     // })
+   
+}
+
+function newCar (req, res){
+    res.render("cars/new", {title: "Manufacturers"})
 }

@@ -15,9 +15,12 @@
 7. Create the schema and model for your thing that you are CRUDing. Commit.
 8. Take a moment to reflect on MEN concepts. Make sure you can concisely and precisely answer these questions in an `answers.txt`:
     - What is a schema?
+The schema is effectively the bluprint of your database. It describes how the data may relate to other sets of data (one to many or many to many)
     - What is a model?
     - What is the difference?
+
     - What is the relationship between them?
+
 9. In the "create" route, use mongoose to add a document to your database (`.create()`) based on what is in `req.body`.  Commit.
 10. The "create" route redirect to the index page *after* the document has been created. Commit.
 11. Make an "index" view which displays all the data created by the app so far. Commit.
