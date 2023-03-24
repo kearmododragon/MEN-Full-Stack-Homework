@@ -7,6 +7,7 @@ const carSchema = new mongoose.Schema({
     },
     country:{
         type: String, 
+        enum: ['JAPAN', 'USA', 'GERMANY'],
         default: 'JAPAN'
     },
     year:{

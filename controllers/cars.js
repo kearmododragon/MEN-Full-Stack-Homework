@@ -5,12 +5,13 @@ module.exports = {
 }
 
 function index(req, res){
-    Car.find({})
-    .then(function(cars){
-        res.render('cars/index', {cars, title: 'Welcome to our cars!'})
-    })
-    .catch(function(err){
-        console.log(err)
-        res.redirect('/')
-    })
+    res.render('cars/index', { title: 'Welcome to our cars!'})
+    // Car.find({})
+    // .then(function(cars){
+        
+    // })
+    // .catch(function(err){
+    //     console.log(err)
+    //     res.redirect('/')
+    // })
 }

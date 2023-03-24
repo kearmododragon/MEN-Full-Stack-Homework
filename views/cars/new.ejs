@@ -1,0 +1,37 @@
+<%- include('../partials/header', { title }) %>
+<table>
+    <thead>
+        <tr class="headings">
+            <th>Manufacturer: </th>
+            <th>Country: </th>
+            <th>Created: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% cars.forEach(c => { %>
+            <tr>
+                <td>
+                    <%= c.manufacturer %>
+                </td>
+                <td>
+                    <%= c.country %>
+                </td>
+                <td>
+                    <%= c.year %>
+                </td>
+                <td>
+                    <a class="btn-detail"
+                    href="/cars/manufacturers/<%=c._id%>">DETAILS</a>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+<section>
+    <form method="POST" action="/cars/manufacturers">
+        <label>Manufacturer Name: </label>
+        <input type="submit" value="Add manufacturer"><br/>
+        <button>ADD MANUFACTURER</button>
+    </form>    
+</section>
+<%- include('../partials/footer') %>
