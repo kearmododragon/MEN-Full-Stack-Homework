@@ -7,8 +7,6 @@
 4. default is main branch, moving forward writing code within a feature branch
 
 
-
-1. Initialize a Node project. Make an initial commit.
 2. Make an express-generator app. Commit.
 3. Make it render a page for "new". Commit.
 4. Make a "create" route. Commit.
